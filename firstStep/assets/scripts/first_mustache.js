@@ -27,12 +27,27 @@ define(function() {
 
   var emptyArray = [];
 
+  var musketeers = ["Athos", "Aramis", "Porthos", "D'Artagnan"];
 
+  var beatles = [
+    { "firstName": "John", "lastName": "Lennon" },
+    { "firstName": "Paul", "lastName": "McCartney" },
+    { "firstName": "George", "lastName": "Harrison" },
+    { "firstName": "Ringo", "lastName": "Starr" }
+  ];
+  var name = function () {
+      return this.firstName + " " + this.lastName;
+  };
 
   return {
     variables : variables,
     falses    : falses,
     stooges : stooges,
-    emptyArray : emptyArray
+    emptyArray : emptyArray,
+    musketeers : musketeers,
+    beatles : beatles,
+    name : name
   };
+
+
 });

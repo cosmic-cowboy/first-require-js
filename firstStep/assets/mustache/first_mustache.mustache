@@ -56,7 +56,21 @@
   {{name}}<br/>
 {{/stooges}}
 <p></p>
+
 <!-- 配列が空 -->
 {{^emptyArray}}
   空の配列です<br/>
+  <p></p>
 {{/emptyArray}}
+
+<!-- key-valueではなく、値だけの場合 -->
+{{#musketeers}}
+  {{.}}<br/>
+{{/musketeers}}
+<p></p>
+
+
+<!-- 宣言された関数を配列に対して実行することができる -->
+{{#beatles}}
+  {{name}}<br/>
+{{/beatles}}
