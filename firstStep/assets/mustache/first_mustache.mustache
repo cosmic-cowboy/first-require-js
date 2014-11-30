@@ -1,0 +1,49 @@
+
+<!-- Sections -->
+
+<h1>Variables</h1>
+
+{{#variables}}
+
+
+<!-- Variblesの組み合わせ -->
+
+* {{age}}<br/>
+* {{company}}<br/>
+
+<!-- エスケープ -->
+
+* {{{company}}}<br/>
+* {{&company}}<br/>
+
+<!-- 階層も指定可能 -->
+
+* {{name.first}} {{name.last}}<br/>
+{{/variables}}
+
+
+<!-- null, undefined, false, 0, or NaN がどのように扱われるか-->
+
+<h1>falses</h1>
+
+{{#falses}}
+
+{{#false_1}}有効値<br/>{{/false_1}}
+{{^false_1}}無効値<br/>{{/false_1}}
+
+{{#false_2}}有効値<br/>{{/false_2}}
+{{^false_2}}無効値<br/>{{/false_2}}
+
+{{#false_3}}有効値<br/>{{/false_3}}
+{{^false_3}}無効値<br/>{{/false_3}}
+
+{{#false_4}}有効値<br/>{{/false_4}}
+{{^false_4}}無効値<br/>{{/false_4}}
+
+
+{{#false_5}}有効値<br/>{{/false_5}}
+{{^false_5}}無効値<br/>{{/false_5}}
+
+{{/falses}}
+
+

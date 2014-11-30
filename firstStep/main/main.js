@@ -17,16 +17,21 @@ require.config({
 require([
   'scripts/content1',
   'scripts/content2',
+  'scripts/first_mustache',
   'text!../assets/mustache/blankslate.mustache',
+  'text!../assets/mustache/first_mustache.mustache',
   'mustache',
   'jquery'
   ], function(
   content1,
   content2,
+  first_mustacheJSON,
   blankslateMustache,
+  first_mustacheMustache,
   Mustache,
   $){
     $('#result').append(Mustache.render(blankslateMustache, content1));
     $('#result').append(Mustache.render(blankslateMustache, content2));
+    $('#result').append(Mustache.render(first_mustacheMustache, first_mustacheJSON));
   }
 );
