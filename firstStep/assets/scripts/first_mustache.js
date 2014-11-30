@@ -19,8 +19,20 @@ define(function() {
     false_5 : NaN
   };
 
+  var stooges = [
+    { "name": "Moe" },
+    { "name": "Larry" },
+    { "name": "Curly" }
+  ];
+
+  var emptyArray = [];
+
+
+
   return {
     variables : variables,
-    falses    : falses
+    falses    : falses,
+    stooges : stooges,
+    emptyArray : emptyArray
   };
 });
