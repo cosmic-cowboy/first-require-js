@@ -39,6 +39,15 @@ define(function() {
       return this.firstName + " " + this.lastName;
   };
 
+  var functions = {
+    "name": "Tater",
+    "bold": function () {
+      return function (text, render) {
+        return "<b>" + render(text) + "</b>";
+      }
+    }
+  };
+
   return {
     variables : variables,
     falses    : falses,
@@ -46,7 +55,8 @@ define(function() {
     emptyArray : emptyArray,
     musketeers : musketeers,
     beatles : beatles,
-    name : name
+    name : name,
+    functions : functions
   };
 
 
