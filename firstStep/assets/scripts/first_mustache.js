@@ -48,6 +48,7 @@ define(function() {
     }
   };
 
+  
   return {
     variables : variables,
     falses    : falses,
@@ -56,7 +57,10 @@ define(function() {
     musketeers : musketeers,
     beatles : beatles,
     name : name,
-    functions : functions
+    functions : functions,
+    default_tags : "通常のデリミテ",
+    erb_style_tags : "デリミテを変更",
+    default_tags_again : "通常のデリミテに"
   };
 
 
